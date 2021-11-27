@@ -4,6 +4,9 @@
     min-height: 24px;
     width: 320px;
     background-color: #EFEFEF;
+    @media (min-width: @tablet-width) {
+        display: none;
+      }
 }
 .aboutmodel__namephone {
    margin-top: 5px;
@@ -25,16 +28,27 @@
    font-size: 30px;
    line-height: 40px;
    color: #000000;
+   @media (min-width: @tablet-width) {
+    margin-top: 39px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 50px;
+  }
 }
 .aboutmodel__opportunities::before{
    content: "";
    position: absolute;
    top: 110px;
-   left: 5px;
+   left: 0;
    width: 290px;
    height: 1px;
    background-color: #000000;
    opacity: 0.3;
+   @media (min-width: @tablet-width) {
+    top: 94px;
+    width: 670px;
+   }
 }
 .aboutmodel__design {
    padding-left: 0;
@@ -43,6 +57,13 @@
    font-size: 21px;
    line-height: 31px;
    color: #000000;
+   @media (min-width: @tablet-width) {
+        margin-top: 80px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+   }
 }
 .aboutmodel__list{
    list-style-type: none;
@@ -52,11 +73,16 @@
    grid-template-rows:1fr 210px 350px;
    margin: 0;
    padding: 0;
+   @media (min-width: @tablet-width) {
+    grid-template-rows:1fr 253px;
+   }
 
 }
 .list__itemitemactive{
     grid-column: 1 / -1;
-
+    @media (min-width: @tablet-width) {
+        grid-column: 1 / 2;
+    }
 }
 .itemactive{
     margin-top: 30px;
@@ -66,11 +92,25 @@
     width: 290px;
     background-color: #171717;
     border-radius: 5px;
+    @media (min-width: @tablet-width) {
+        width: 325px;  
+    }
 }
 .list__image{
     margin: 0 auto;
     margin-left: 15px;
     margin-top: 20px;
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
+}
+.list__imagetablet{
+    display: none;
+    @media (min-width: @tablet-width) {
+        display: block;
+        padding-top: 27px;
+        margin-left: 15px;
+    }
 }
 .list__activeabout{
     width: 260px;
@@ -84,28 +124,55 @@
     font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
+    @media (min-width: @tablet-width) {
+        width: 295px;
+        padding-bottom: 35px;
+    }
 }
 .list__imagecolor{
     padding-left: 40px;
+    @media (min-width: @tablet-width) {
+        margin-top: 5px;
+        padding-left: 132px; 
+    }
 }
 .list__imageglass{
     padding-left: 45px; 
+    @media (min-width: @tablet-width) {
+        margin-top: 5px;
+        padding-left: 143px;  
+    }
 }
 .list__colorabout {
+    word-wrap: break-word;
     width: 141px;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 17px;
     color: #000000;
+    @media (min-width: @tablet-width) {
+        width: 325px;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: bold;
+    }
 }
 .list__glassabout{
+    word-wrap: break-word;
     width: 141px;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 17px;
     color: #000000;
+    @media (min-width: @tablet-width) {
+        width: 325px;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: bold;
+        padding-left: 10px;
+    }
 }
 .list__item{
     padding: 0;
@@ -113,11 +180,21 @@
 }
 .list__itemphone{
     grid-column: 1 / -1;
+    @media (min-width: @tablet-width) {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 2;   
+        grid-column-end: 3; 
+    }
 }
 .list__imageluxary{
     position: relative;
     margin-top: 25px;
     padding-left: 65px;
+    @media (min-width: @tablet-width) {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
 }
 .list__luxaryabout:before{
     content: "";
@@ -128,6 +205,10 @@
     height: 1px;
     background-color: #000000;
     opacity: 0.1;
+    @media (min-width: @tablet-width) {
+        top: 225px;
+        left: 350px;
+    }
 }
 .list__luxaryabout:after{
     content: "";
@@ -138,6 +219,10 @@
     height: 1px;
     background-color: #000000;
     opacity: 0.3;
+    @media (min-width: @tablet-width) {
+        width: 670px;
+        top: 605px;
+    }
 }
 .list__luxaryabout{
     word-wrap: break-word;
@@ -147,4 +232,7 @@
     font-size: 14px;
     line-height: 21px;
     color: #000000;
+    @media (min-width: @tablet-width) {
+        margin-left: 10px;
+    }
 }

@@ -6,13 +6,60 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.head__navigator:before{
+    display: none;
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 720px;
+    height: 1px;
+    opacity: 0.1;
+    background-color: black;
+    @media (min-width: @tablet-width) {
+        display: block;
+      }
+}
+.head__navigator:after{
+    display: none;
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: -25px;
+    width: 149px;
+    height: 3px;
+    background-color: #D70E2A;
+    @media (min-width: @tablet-width) {
+        display: block;
+      }
+}
 .head__mobileEldarado{
     margin-bottom: 4px;
-
+    @media (min-width: @tablet-width) {
+        display: none;
+      }
+}
+.head__Eldarado{
+    display: none;
+    @media (min-width: @tablet-width) {
+        margin-top: 17px;
+        display: block;
+      }
 }
 .head__mobileMvideo{
     margin-top: 10px;
     margin-left: 10px;
+    @media (min-width: @tablet-width) {
+        display: none;
+      }
+}
+.head__Mvideo{
+    display: none;
+    @media (min-width: @tablet-width) {
+        display: block;
+        margin-top: 13px;
+        margin-left: 20px;
+      }
 }
 .head__toggle {
     position: absolute;
@@ -25,6 +72,9 @@
     background-color: inherit;
     cursor: pointer;
     border: none;
+    @media (min-width: @tablet-width) {
+        top: 5px;
+      }
   }
  .head__toggle::before {
     content: "";
@@ -35,4 +85,24 @@
     height: 1px;
     background-color: #FFFFFF;
     box-shadow: 0 11px 0 0 #D70E2A, 0 18px 0 0 #D70E2A, 0 25px 0 0 #D70E2A;
+    @media (min-width: @tablet-width) {
+        height: 2px;
+      }
+ }
+ .head__namepresent{
+     display: none;
+     @media (min-width: @tablet-width) {
+        width: 520px;
+        word-wrap: break-word;
+        display: block;
+        margin-top: 23px;
+        font-size: 14px;
+        line-height: 21px;
+        color: black;
+      }
+ }
+ .head__listitem{
+    @media (min-width: @tablet-width) {
+        display: flex;;
+      }
  }

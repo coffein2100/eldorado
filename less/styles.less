@@ -22,20 +22,8 @@
     font-weight: 700;
     font-style: normal;
 }
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+@tablet-width: 720px;
+@desktop-width: 1000px;
 body {
     height: 100%;
     color: #FFFFFF;
@@ -45,6 +33,9 @@ body {
     position: relative;
     width: 290px;
     margin: 0 auto;
+    @media (min-width: @tablet-width) {
+        width: 670px;
+      }
 }
 @import "blocks/head.less";
 @import "blocks/aboutmodel";
