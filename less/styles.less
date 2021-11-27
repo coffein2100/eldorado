@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('/fonts/PT Root UI Medium'), local('/fonts/PTRootUI-Medium'), url('/fonts/Ptrootuimedium.woff2') format('woff2'), url('/fonts/Ptrootuimedium.woff') format('woff'), url('/fonts/Ptrootuimedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('/fonts/PT Root UI Light'), local('/fonts/PTRootUI-Light'), url('/fonts/Ptrootuilight.woff2') format('woff2'), url('/fonts/Ptrootuilight.woff') format('woff'), url('/fonts/Ptrootuilight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('/fonts/PT Root UI'), local('/fonts/PTRootUI-Regular'), url('/fonts/Ptrootui.woff2') format('woff2'), url('/fonts/Ptrootui.woff') format('woff'), url('/fonts/Ptrootui.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('/fonts/PT Root UI Bold'), local('/fonts/PTRootUI-Bold'), url('/fonts/Ptrootuibold.woff2') format('woff2'), url('/fonts/Ptrootuibold.woff') format('woff'), url('/fonts/Ptrootuibold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+body {
+    height: 100%;
+    color: #FFFFFF;
+    font-family: "PT Root UI", sans-serif;
+}
+ .container {
+    position: relative;
+    width: 290px;
+    margin: 0 auto;
+}
+@import "blocks/head.less";
+@import "blocks/aboutmodel";
+@import "blocks/recordvideo.less";
+@import "blocks/accessories.less";
+@import "blocks/service.less";

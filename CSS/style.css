@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('PT Root UI Medium'), local('PTRootUI-Medium'), url('Ptrootuimedium.woff2') format('woff2'), url('Ptrootuimedium.woff') format('woff'), url('Ptrootuimedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('PT Root UI Light'), local('PTRootUI-Light'), url('Ptrootuilight.woff2') format('woff2'), url('Ptrootuilight.woff') format('woff'), url('Ptrootuilight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('PT Root UI'), local('PTRootUI-Regular'), url('Ptrootui.woff2') format('woff2'), url('Ptrootui.woff') format('woff'), url('Ptrootui.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('PT Root UI Bold'), local('PTRootUI-Bold'), url('Ptrootuibold.woff2') format('woff2'), url('Ptrootuibold.woff') format('woff'), url('Ptrootuibold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+body {
+    height: 100%;
+    color: #FFFFFF;
+    font-family: "PT Root UI", sans-serif;
+}
+ .container {
+    position: relative;
+    width: 290px;
+    margin: 0 auto;
+}
+.head__navigator{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.head__mobileEldarado{
+    margin-bottom: 4px;
+
+}
+.head__mobileMvideo{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.head__toggle {
+    position: absolute;
+    top: 0;
+    right: 9px;
+    z-index: 2;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: inherit;
+    cursor: pointer;
+    border: none;
+  }
+  .head__toggle::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 13px;
+    width: 24px;
+    height: 1px;
+    background-color: #FFFFFF;
+    box-shadow: 0 11px 0 0 #D70E2A, 0 18px 0 0 #D70E2A, 0 25px 0 0 #D70E2A;
+  }
+ 
+
+/*recordvideo */
